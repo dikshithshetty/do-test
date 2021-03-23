@@ -6,6 +6,6 @@ defmodule DoWeb.IndexController do
       Application.get_env(:do, :settings)
       |> Keyword.fetch!(:version)
 
-    send_resp(conn, 200, "Version ##{version}")
+    send_resp(conn, 200, "Version ###{version}")
   end
 end
